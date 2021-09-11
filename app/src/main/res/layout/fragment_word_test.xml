@@ -187,6 +187,8 @@
         android:layout_marginTop="@dimen/margin_top_circular_progressbar"
         android:indeterminateOnly="false"
         android:progressDrawable="@drawable/circular_countdown"
+        tools:progress="10"
+        android:scaleX="-1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -222,7 +224,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/fontsfree_net_sfprodisplay_medium"
             android:gravity="center"
-            android:text="sn"
+            android:text="@string/second"
             android:textColor="@color/text_default_color"
             android:textSize="@dimen/textsize_second"
             app:layout_constraintEnd_toEndOf="parent"
@@ -253,7 +255,7 @@
         android:layout_marginTop="@dimen/margin_top_answer_count"
         android:layout_marginEnd="@dimen/margin_end_answer_count"
         android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
-        android:text="3/10"
+        android:text="@string/count_answer"
         android:textColor="@color/text_default_color"
         android:textSize="@dimen/textsize_answer_count"
         app:layout_constraintEnd_toEndOf="parent"

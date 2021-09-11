@@ -8,5 +8,6 @@
     <string name="word_test">Kelime Testi</string>
     <string name="skip">Atla</string>
     <string name="second">sn</string>
+    <string name="count_answer">3/10</string>
     <string name="test_explanation">Kelime Testi, Sizin dil seviyenizi ölçmek içindir. Test sonunda doğru ve yanlışlarınızı görebileceksiniz!</string>
 </resources>

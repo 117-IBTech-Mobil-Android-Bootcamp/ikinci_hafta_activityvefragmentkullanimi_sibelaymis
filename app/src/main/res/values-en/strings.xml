@@ -10,4 +10,5 @@
     <string name="skip">Skip</string>
     <string name="test_explanation">The Vocabulary Test is to measure Your language level. At the end of the test, you will be able to see your right and wrong!</string>
     <string name="second">sn</string>
+    <string name="count_answer">3/10</string>
 </resources>
