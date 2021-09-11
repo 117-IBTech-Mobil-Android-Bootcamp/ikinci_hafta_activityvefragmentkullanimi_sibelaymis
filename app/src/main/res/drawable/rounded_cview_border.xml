@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/white" />
+    <stroke android:width="2dp" android:color="@color/cview_border"/>
+
+
+    <corners
+        android:bottomLeftRadius="@dimen/view_margin_large"
+        android:bottomRightRadius="@dimen/view_margin_large"
+        android:topLeftRadius="@dimen/view_margin_large"
+        android:topRightRadius="@dimen/view_margin_large" />
+</shape>

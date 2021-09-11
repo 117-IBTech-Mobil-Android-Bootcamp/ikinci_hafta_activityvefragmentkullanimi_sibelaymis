@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".fragments.WordTestFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_cloud1"
+        android:layout_marginEnd="@dimen/margin_end_cloud1"
+        android:src="@drawable/ic_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_cloud2"
+        android:layout_marginTop="@dimen/margin_top_cloud2"
+        android:src="@drawable/ic_vector__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="@dimen/width_cardview"
+        android:layout_height="@dimen/height_cardview"
+        android:layout_marginStart="@dimen/margin_start_end_cardview"
+        android:layout_marginEnd="@dimen/view_margin_medium"
+        android:layout_marginBottom="@dimen/margin_bottom_cardview_to_parent"
+        app:cardCornerRadius="@dimen/view_margin_large"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/card2"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_cview">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvCard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/textsize_cardtext" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="@dimen/width_cardview"
+        android:layout_height="@dimen/height_cardview"
+        android:layout_marginEnd="@dimen/margin_start_end_cardview"
+        android:layout_marginBottom="@dimen/margin_bottom_cardview_to_parent"
+        app:cardCornerRadius="@dimen/view_margin_large"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_cview">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvCard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/textsize_cardtext" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="@dimen/width_cardview"
+        android:layout_height="@dimen/height_cardview"
+        android:layout_marginStart="@dimen/margin_start_end_cardview"
+        android:layout_marginEnd="@dimen/view_margin_medium"
+        android:layout_marginBottom="@dimen/margin_bottom_cardview_to_cardview"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardCornerRadius="@dimen/view_margin_large"
+        app:layout_constraintBottom_toTopOf="@id/card1"
+        app:layout_constraintEnd_toStartOf="@+id/card4"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_cview_border">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvCard3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/textsize_cardtext"
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="@dimen/width_cardview"
+        android:layout_height="@dimen/height_cardview"
+        android:layout_marginEnd="@dimen/margin_start_end_cardview"
+        android:layout_marginBottom="@dimen/margin_bottom_cardview_to_cardview"
+        app:cardCornerRadius="@dimen/view_margin_large"
+        android:clickable="true"
+        android:focusable="true"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toTopOf="@id/card2"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_cview">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvCard4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/textsize_cardtext" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_question"
+        android:layout_marginEnd="@dimen/margin_end_question"
+        android:layout_marginTop="@dimen/margin_top_question"
+        android:layout_marginBottom="@dimen/margin_bottom_question"
+        android:background="@drawable/rounded_tview"
+        android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+        android:gravity="center"
+        android:id="@+id/question_tview"
+        android:textColor="@color/text_default_color"
+        android:textSize="@dimen/textsize_question"
+        app:layout_constraintTop_toBottomOf="@id/progressBar_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/card4"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_avatarbg"
+        app:layout_constraintStart_toStartOf="@id/view_progress_bar"
+        app:layout_constraintTop_toTopOf="@id/view_progress_bar"
+        app:layout_constraintEnd_toEndOf="@id/view_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@id/view_progress_bar"/>
+
+
+    <ProgressBar
+        android:id="@+id/view_progress_bar"
+        android:layout_width="@dimen/width_circular_progressbar"
+        android:layout_height="@dimen/height_circular_progressbar"
+        android:layout_marginStart="@dimen/view_margin_medium"
+        android:layout_marginTop="@dimen/margin_top_circular_progressbar"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circular_countdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/view_progress_bar"
+        app:layout_constraintEnd_toEndOf="@id/view_progress_bar"
+        app:layout_constraintStart_toStartOf="@id/view_progress_bar"
+        app:layout_constraintTop_toTopOf="@id/view_progress_bar">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/textsize_timer"
+            android:textAlignment="center"
+            tools:text="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fontsfree_net_sfprodisplay_medium"
+            android:gravity="center"
+            android:text="sn"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/textsize_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_timer" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:id="@+id/progressBar_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end_horizontal_progressbar"
+        android:layout_marginTop="@dimen/margin_top_horizontal_progressbar"
+        android:layout_marginEnd="@dimen/margin_start_end_horizontal_progressbar"
+        android:max="10"
+        android:progress="3"
+        android:progressBackgroundTint="@color/pbar_secondary_color"
+        android:progressTint="@color/pbar_primary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/count_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_answer_count"
+        android:layout_marginEnd="@dimen/margin_end_answer_count"
+        android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+        android:text="3/10"
+        android:textColor="@color/text_default_color"
+        android:textSize="@dimen/textsize_answer_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="@dimen/view_margin_large"
+        android:layout_height="@dimen/view_margin_large"
+        android:layout_marginTop="@dimen/margin_exit_btn"
+        android:layout_marginEnd="@dimen/margin_exit_btn"
+        android:background="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

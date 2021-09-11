@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color_iv"
+    tools:context=".fragments.FirstTestFragment">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_decky_first_test_screen"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:id="@+id/startTestLogo"/>
+
+   <Button
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/rounded_button_purple"
+       android:text="@string/start_now"
+       app:layout_constraintBottom_toTopOf="@id/startTestLogo"
+       app:layout_constraintStart_toStartOf="@id/guide_start"
+       app:layout_constraintEnd_toEndOf="@id/guide_end"
+       android:layout_marginBottom="@dimen/margin_bottom_start_Btn"
+       android:layout_marginStart="@dimen/margin_start_Btn"
+       android:layout_marginEnd="@dimen/margin_start_Btn"
+       android:drawableRight="@drawable/ic_rightarrow"
+       android:paddingRight="@dimen/padding_start_Btn_icon"
+       android:id="@+id/startNowButton"/>
+
+   <TextView
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="@string/test_explanation"
+       android:textColor="@color/text_default_color"
+       android:textSize="@dimen/textsize_explanation"
+       android:fontFamily="@font/fontsfree_net_sfprodisplay_light"
+       app:layout_constraintBottom_toTopOf="@id/startNowButton"
+       app:layout_constraintStart_toStartOf="@id/guide_start"
+       app:layout_constraintEnd_toEndOf="@id/guide_end"
+       android:id="@+id/explanation"
+       android:gravity="center"
+       android:layout_marginBottom="@dimen/view_margin_large"/>
+
+   <TextView
+       android:id="@+id/title_fragment"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/margin_title_textView"
+       android:layout_marginEnd="@dimen/margin_title_textView"
+       android:layout_marginBottom="@dimen/view_margin_small"
+       android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+       android:text="@string/word_test"
+       android:textAlignment="gravity"
+       android:textColor="@color/text_default_color"
+       android:textSize="@dimen/textsize_title"
+       app:layout_constraintBottom_toTopOf="@id/explanation"
+       app:layout_constraintEnd_toEndOf="@id/guide_end"
+       app:layout_constraintStart_toStartOf="@id/guide_start" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/skip"
+       android:textColor="@color/text_default_color"
+       android:textSize="@dimen/textsize_skip"
+       android:fontFamily="@font/fontsfree_net_sfprodisplay_heavy"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:id="@+id/skip"
+       android:layout_marginTop="@dimen/view_margin_xlarge"
+       android:layout_marginEnd="@dimen/view_margin_xlarge"/>
+
+   <androidx.constraintlayout.widget.Guideline
+       android:layout_width="wrap_content"
+       android:layout_height="1dp"
+       android:orientation="vertical"
+       app:layout_constraintGuide_begin="@dimen/margin_guideline"
+       android:id="@+id/guide_start"
+       app:layout_constraintStart_toStartOf="parent" />
+
+
+   <androidx.constraintlayout.widget.Guideline
+       android:layout_width="wrap_content"
+       android:layout_height="1dp"
+       android:orientation="vertical"
+       android:id="@+id/guide_end"
+       app:layout_constraintGuide_end="@dimen/margin_guideline"
+       app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
